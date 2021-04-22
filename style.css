@@ -1,0 +1,104 @@
+@import 'fonts.css';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+body{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #b38484;
+    animation-name: imron2;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    
+}
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    text-align: center;
+    font-size: 4vw;
+    color: #ffff;
+    line-height: 1em;
+    z-index: 1000;
+    font-weight: 900;
+    font-family: 'Bangers';
+    animation-name: imron3;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.block{
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background: #d4a3a3;
+    box-shadow: 10px 10px 50px rgba(0,0,0,0.2);
+}
+
+
+.block{
+    animation-name: imron1;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+@keyframes imron1{
+    0%{
+        background:  rgb(184, 140, 140);
+    }
+    30%{
+        width: 5%;
+        height: 3%;
+        background: rgb(175, 32, 32);
+    }
+    60%{
+        background: rgb(116, 93, 93);
+    }
+    
+    100%{
+        background: rgb(72, 214, 179);
+       
+    }
+}
+@keyframes imron2{
+    0%{
+        background: #523939;
+    }
+    30%{
+        background: rgb(106, 107, 53);
+    }
+    70%{
+        background: rgb(179, 197, 78);
+    }
+    100%{
+        background: rgb(213, 248, 17);
+    }
+}
+@keyframes imron3{
+    0%{
+        color: rgb(0, 0, 0);
+    }
+    40%{
+        color: rgb(187, 52, 52);
+    }
+    70%{
+        color: rgb(82, 128, 226);
+    }
+    100%{
+        color: rgb(223, 152, 37);
+    }
+}
